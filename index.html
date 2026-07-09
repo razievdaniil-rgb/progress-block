@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Progress</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="app__title">Progress</h1>
+
+    <div id="progress"></div>
+
+    <form class="controls" autocomplete="off">
+      <input
+        id="valueInput"
+        class="value-field"
+        type="text"
+        inputmode="numeric"
+        maxlength="3"
+        value="60"
+        aria-label="Progress value, 0 to 100"
+      >
+      <label class="control-label" for="valueInput">Value</label>
+
+      <span class="toggle">
+        <input id="animateToggle" class="toggle__input" type="checkbox">
+        <span class="toggle__track"></span>
+      </span>
+      <label class="control-label" for="animateToggle">Animate</label>
+
+      <span class="toggle">
+        <input id="hideToggle" class="toggle__input" type="checkbox">
+        <span class="toggle__track"></span>
+      </span>
+      <label class="control-label" for="hideToggle">Hide</label>
+    </form>
+  </main>
+
+  <script src="js/progress.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
